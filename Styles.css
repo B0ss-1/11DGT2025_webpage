@@ -1,0 +1,50 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "logo banner banner"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
+}
+.box{
+    border: solid 1px #fff;
+    margin: 3px;
+    padding: 20px;
+
+}
+.logo{
+    grid-area: logo;/*this tells the css that  we are refering to the logo section in our grid above in grid*/
+}
+.banner{
+    grid-area: banner;
+}
+.nav{
+    grid-area: nav;
+    background-color: #535353;
+    color: #db9;
+}
+.main{
+    grid-area: main;
+}
+.side{
+    grid-area: side;
+}
+.footer{
+    grid-area: footer;
+}
+.logo, .banner, .footer{
+    background-color: #6a170b;
+    color:#fff;
+}
+/* -000- Start of styleing of grid -000- */
+.nav a{
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.nav a:link, a:visited{
+    color: #6a170b;
+}
+.nav a:hover{color: #ff170b;}
